@@ -25,6 +25,12 @@ const styles = {
     gap: '15px',
     gridTemplateColumns: 'repeat(12, 1fr)',
     mx: '120px'
+  },
+  logo: {
+    width: '100%',
+    maxHeight: '45px',
+    paddingLeft: '30px',
+    paddingRight: '30px'
   }
 }
 

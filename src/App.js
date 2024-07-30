@@ -1,11 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
+import Herosection from './components/Herosection';
+import Partners from './components/Partners';
+import Benefits from './components/Benefits';
 
 function App() {
   return (
     <>
       <Navbar />
+      <Herosection />
+      <Partners />
+      <Benefits />
     </>
     // <div className="App">
     //   <header className="App-header">
