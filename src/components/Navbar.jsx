@@ -19,9 +19,9 @@ function Navbar() {
 
   return (
     <AppBar
-    position="static"
+    position="sticky"
     sx={{
-      backgroundColor: 'rgba(0,0,0,0)',
+      backgroundColor: 'white',
       borderBottom: '3px solid #F6F6F6'
     }}
     elevation={0}
