@@ -1,51 +1,11 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import logoUrl from '../assets/GAlogo.png'
 import styles from './Styles';
-import { styled } from '@mui/material';
-import backgroundUrl from '../assets/background.png'
+import backgroundUrl from '../assets/background.png';
+import { H1Typography, H3Typography, Body1Typography } from './Fonts';
 
 function Herosection() {
-  const H1Typography = styled(Typography) ({
-    fontFamily: 'poppins',
-    fontWeight: 500,
-    fontSize: '3rem',
-    textAlign: 'start',
-    lineHeight: '1.5',
-    color: '#333333',
-    marginTop: '1.5rem',
-  });
-
-const H3Typography = styled(Typography) ({
-  fontFamily: 'poppins',
-  fontWeight: 500,
-  fontSize: 22,
-  textAlign: 'start',
-  lineHeight: '1.5',
-  color: '#333333',
-  marginTop: '1.5rem',
-  });
-
-const Body1Typography = styled(Typography) ({
-  fontFamily: 'poppins',
-  fontWeight: 500,
-  fontSize: 14,
-  textAlign: 'start',
-  lineHeight: '1.5',
-  color: '#333333',
-  marginTop: '1.5rem',
-  });
-
 
  return (
   <>
