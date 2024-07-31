@@ -24,11 +24,11 @@ const styles = {
     display: 'grid',
     gap: '15px',
     gridTemplateColumns: 'repeat(12, 1fr)',
-    mx: '120px'
+    px: '120px'
   },
   logo: {
     width: '100%',
-    maxHeight: '45px',
+    maxHeight: '35px',
     paddingLeft: '30px',
     paddingRight: '30px'
   }
