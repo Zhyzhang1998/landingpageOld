@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import { H2Typography, Body1Typography, H3Typography } from './Fonts';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
 import styles from './Styles';
 
 const marks = [

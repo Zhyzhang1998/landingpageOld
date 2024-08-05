@@ -19,6 +19,7 @@ function App() {
       <Ourprice />
       <WhyUs />
       <ContactForm />
+      <Footer />
     </>
     // <div className="App">
     //   <header className="App-header">
