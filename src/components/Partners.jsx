@@ -10,18 +10,9 @@ import logo5Url from '../assets/logo5.png'
 import logo6Url from '../assets/logo6.png'
 import logo7Url from '../assets/logo7.jpg'
 import styles from './Styles';
+import { H3Typography } from './Fonts';
 
 function Partners() {
-
-  const H3Typography = styled(Typography) ({
-    fontFamily: 'poppins',
-    fontWeight: 500,
-    fontSize: 22,
-    textAlign: 'start',
-    lineHeight: '1.5',
-    color: '#333333',
-    marginTop: '1.5rem',
-    });
 
   return (
     <Box sx={{
