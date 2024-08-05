@@ -1,10 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+
+import Ourprice from './components/Ourprice';
+import WhyUs from './components/WhyUs';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Herosection from './components/Herosection';
 import Partners from './components/Partners';
 import Benefits from './components/Benefits';
 import Features from './components/Features';
+
 
 function App() {
   return (
@@ -14,6 +20,10 @@ function App() {
       <Partners />
       <Benefits />
       <Features />
+      <Ourprice />
+      <WhyUs />
+      <ContactForm />
+      <Footer />
     </>
     // <div className="App">
     //   <header className="App-header">
