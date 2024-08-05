@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Component/Navbar';
-import Herosection from './Component/Herosection';
-import Partners from './Component/Partners';
-import Benefits from './Component/Benefits';
-import Ourprice from './Component/Ourprice';
-import WhyUs from './Component/WhyUs';
-import ContactForm from './Component/ContactForm';
-import Footer from './Component/Footer';
+import Navbar from './component/Navbar';
+import Herosection from './component/Herosection';
+import Partners from './component/Partners';
+import Benefits from './component/Benefits';
+import Ourprice from './component/Ourprice';
+import WhyUs from './component/WhyUs';
+import ContactForm from './component/ContactForm';
+import Footer from './component/Footer';
 
 function App() {
   return (
