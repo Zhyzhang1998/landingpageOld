@@ -1,13 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './component/Navbar';
-import Herosection from './component/Herosection';
-import Partners from './component/Partners';
-import Benefits from './component/Benefits';
-import Ourprice from './component/Ourprice';
-import WhyUs from './component/WhyUs';
-import ContactForm from './component/ContactForm';
-import Footer from './component/Footer';
+
+import Ourprice from './components/Ourprice';
+import WhyUs from './components/WhyUs';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Herosection from './components/Herosection';
+import Partners from './components/Partners';
+import Benefits from './components/Benefits';
+import Features from './components/Features';
+
 
 function App() {
   return (
@@ -16,6 +19,7 @@ function App() {
       <Herosection />
       <Partners />
       <Benefits />
+      <Features />
       <Ourprice />
       <WhyUs />
       <ContactForm />
