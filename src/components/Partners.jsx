@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { styled } from '@mui/material';
+import { Container, styled } from '@mui/material';
 import logo1Url from '../assets/logo1.png'
 import logo2Url from '../assets/logo2.png'
 import logo3Url from '../assets/logo3.png'
@@ -10,18 +10,9 @@ import logo5Url from '../assets/logo5.png'
 import logo6Url from '../assets/logo6.png'
 import logo7Url from '../assets/logo7.jpg'
 import styles from './Styles';
+import { H3Typography } from './Fonts';
 
 function Partners() {
-
-  const H3Typography = styled(Typography) ({
-    fontFamily: 'poppins',
-    fontWeight: 500,
-    fontSize: 22,
-    textAlign: 'start',
-    lineHeight: '1.5',
-    color: '#333333',
-    marginTop: '1.5rem',
-    });
 
   return (
     <Box sx={{
@@ -49,7 +40,7 @@ function Partners() {
           <img
             src={logo2Url}
             alt='Logo'
-            style={{...styles.logo, maxHeight: '40px'}}/>
+            style={{...styles.logo, maxHeight: '30px'}}/>
           <img
             src={logo3Url}
             alt='Logo'
@@ -61,15 +52,15 @@ function Partners() {
           <img
             src={logo5Url}
             alt='Logo'
-            style={{...styles.logo, maxHeight: '35px'}}/>
+            style={{...styles.logo, maxHeight: '25px'}}/>
           <img
             src={logo6Url}
             alt='Logo'
-            style={{...styles.logo, maxHeight: '55px'}}/>
+            style={{...styles.logo, maxHeight: '45px'}}/>
           <img
             src={logo7Url}
             alt='Logo'
-            style={{...styles.logo, maxHeight: '50px'}}/>
+            style={{...styles.logo, maxHeight: '40px'}}/>
         </Box>
     </Box>
   )

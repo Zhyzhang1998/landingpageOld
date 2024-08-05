@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Herosection from './components/Herosection';
 import Partners from './components/Partners';
 import Benefits from './components/Benefits';
+import Features from './components/Features';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Herosection />
       <Partners />
       <Benefits />
+      <Features />
     </>
     // <div className="App">
     //   <header className="App-header">

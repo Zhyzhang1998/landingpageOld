@@ -40,6 +40,7 @@ function Navbar() {
             <Box className='page' sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'center', gridColumn: '4 / 10'}}>
               {pages.map((page) => (
                 <Button
+                  href={`#${page}`}
                   key={page}
                   sx={styles.navButton}
                 >
