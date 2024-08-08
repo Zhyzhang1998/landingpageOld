@@ -26,7 +26,7 @@ function Navbar() {
     }}
     elevation={0}
     >
-      <Container maxWidth="xl">
+      <Container sx={{...styles.containerStyle, py: 0}}>
         <Toolbar disableGutters sx={styles.gridSetting}>
             <Box className='logo' sx={{ display:'flex', alignItems: 'center', gridColumn: '1 / 4'}}>
               <img

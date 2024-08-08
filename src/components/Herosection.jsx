@@ -8,7 +8,6 @@ import { Container, styled } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import GraphicEqIcon from '@mui/icons-material/GraphicEq';
 
-
 function Herosection() {
   const DemoTypography = styled(Typography) ({
     fontFamily: 'poppins',
@@ -18,8 +17,8 @@ function Herosection() {
   });
 
  return (
-  <Container id='HeroSection' sx={{paddingLeft: '120px', paddingRight: '120px', paddingTop:'128px', paddingBottom: '64px'}}>
-    <Box sx={{display: 'grid', gridTemplateColumns: '1fr 1fr', gridGap:'15px', height: '600px'}}>
+  <Container id='HeroSection' sx={{...styles.containerStyle, height: '800px'}}>
+    <Box sx={{display: 'grid', gridTemplateColumns: '1fr 1fr', gridGap:'15px'}}>
       <Box sx={{gridColumn: 1, paddingTop: '40px'}} >
         <H1Typography sx={{paddingBottom: '20px'}}>
           Your voice is your power.
@@ -75,6 +74,11 @@ function Herosection() {
                 Yo, Mike. It's Poster Child, this Saturday...
               </DemoTypography>
           </Box>
+        </Box>
+        <Box className='box4' sx={{position:'absolute', top: 0, zIndex: -1, right: 0}}>
+          <svg width="442" height="868" viewBox="0 0 442 868" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="442" height="868" fill="#F8F6F7"/>
+          </svg>
         </Box>
       </Box>
     </Box>

@@ -4,7 +4,7 @@ import { styled } from '@mui/material';
 
 const H1Typography = styled(Typography) ({
   fontFamily: 'poppins',
-  fontWeight: 500,
+  fontWeight: 600,
   fontSize: 50,
   color: '#333333',
 });
