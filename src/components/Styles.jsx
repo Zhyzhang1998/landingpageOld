@@ -1,3 +1,5 @@
+import { colors } from "@mui/material";
+
 const styles = {
   navButton: { 
     mx: 2, 
@@ -31,6 +33,9 @@ const styles = {
     maxHeight: '35px',
     paddingLeft: '30px',
     paddingRight: '30px'
+  },
+  footer: {
+    backgroundColor: '#B2C2EB'
   }
 }
 

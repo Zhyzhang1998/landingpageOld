@@ -5,21 +5,28 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import styles from './Styles';
-import { Margin } from '@mui/icons-material';
-
+import { Container } from "@mui/material";
 
 function ContactForm () {
     return(
-        <Box>
+      <Container
+      id="WhyUs"
+      sx={{
+        paddingLeft: "120px",
+        paddingRight: "120px",
+        paddingTop: "60px",
+        paddingBottom: "64px",
+      }}>
+      <Box>
         <H2Typography>
         Contact Us
         </H2Typography>
         <Box marginTop={5}>
-        <TextField id="filled-basic" label="First Name" variant="filled" />
-        <TextField id="filled-basic" label="Last Name" variant="filled" />
-        <TextField id="filled-basic" label="Email" variant="filled" />
-        <TextField id="filled-basic" label="Phone Number" variant="filled" />
-        <TextField id="filled-basic" label="What else you want to share" variant="filled" />
+        <TextField id="filled-basic" label="First Name" variant="filled" /><br />
+        <TextField id="filled-basic" label="Last Name" variant="filled" /><br />
+        <TextField id="filled-basic" label="Email" variant="filled" /><br />
+        <TextField id="filled-basic" label="Phone Number" variant="filled" /><br />
+        <TextField id="filled-basic" label="What else you want to share" variant="filled" /><br />
         <Box
       marginTop={5}
       marginBottom={5}
@@ -31,6 +38,8 @@ function ContactForm () {
       </Box>
         </Box>
         </Box>
+      </Container>
+        
     );
 }
 

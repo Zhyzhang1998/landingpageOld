@@ -4,17 +4,19 @@ import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
+import { Container } from "@mui/material";
 import styles from './Styles';
 import Box from '@mui/material/Box';
 import { H2Typography, Body1Typography, H3Typography } from './Fonts';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
-      backgroundColor: theme.palette.common.black,
-      color: theme.palette.common.white,
+      backgroundColor: '#B2C2EB',
+      color: '#2C2F2E',
     },
     [`&.${tableCellClasses.body}`]: {
       fontSize: 14,
@@ -56,14 +58,34 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 
 function WhyUs () {
     return (
-        <Box>
+      <Container
+      id="WhyUs"
+      sx={{
+        paddingLeft: "120px",
+        paddingRight: "120px",
+        paddingTop: "60px",
+        paddingBottom: "64px",
+      }}>
+      <Box>
         <H2Typography>
         Why Gabriel AI ?
         </H2Typography>
-        <Table sx={{ width:1000, marginLeft:25, marginTop:5, marginBottom:5}} aria-label="customized table" >
+        <Box
+        justifyContent={'center'}
+        sx={{ display: "flex" }}
+        >
+        <Table sx={{ width:1000, marginTop:5, marginBottom:5}} aria-label="customized table" >
         <TableHead>
           <TableRow>
-            <StyledTableCell align="center">Feature</StyledTableCell>
+            <StyledTableCell align="center">
+            <Box
+            isplay="flex"
+            justifyContent="center"
+            alignItems="center"
+            >
+            <CheckCircleOutlineIcon sx={{fontSize: '15px'}}/>Feature
+            </Box>
+            </StyledTableCell>
             <StyledTableCell align="center">Gabriel personalized message </StyledTableCell>
             <StyledTableCell align="center">Manual calling</StyledTableCell>
             <StyledTableCell align="center">Text/email</StyledTableCell>
@@ -83,6 +105,9 @@ function WhyUs () {
         </TableBody>
       </Table>
         </Box>
+        </Box>
+      </Container>
+        
         
     );
 }
