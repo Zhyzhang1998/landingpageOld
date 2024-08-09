@@ -39,7 +39,7 @@ function Ourprice() {
 
   return (
     <Container
-      id="Ourprice"
+      id="Pricing"
       sx={{
         paddingLeft: "120px",
         paddingRight: "120px",
