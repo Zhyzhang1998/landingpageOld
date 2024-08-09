@@ -11,6 +11,23 @@ import logo6Url from '../assets/logo6.png'
 import logo7Url from '../assets/logo7.jpg'
 import styles from './Styles';
 import { H3Typography } from './Fonts';
+import { motion } from "framer-motion";
+
+const fadeInVariants = {
+  offscreen: {
+    y: 50,
+    opacity: 0
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 0.8
+    }
+  }
+};
 
 function Partners() {
 
@@ -33,22 +50,42 @@ function Partners() {
           justifyContent: 'space-between',
           alignItems: 'center'
         }}>
-          <img
-            src={logo1Url}
-            alt='Logo'
-            style={{...styles.logo, maxHeight: '50px'}}/>
-          <img
-            src={logo2Url}
-            alt='Logo'
-            style={{...styles.logo, maxHeight: '50px'}}/>
-          <img
-            src={logo6Url}
-            alt='Logo'
-            style={{...styles.logo, maxHeight: '65px'}}/>
-          <img
-            src={logo7Url}
-            alt='Logo'
-            style={{...styles.logo, maxHeight: '60px'}}/>
+        <motion.img
+          src={logo1Url}
+          alt='Logo'
+          style={{ ...styles.logo, maxHeight: '50px' }}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+          variants={fadeInVariants}
+        />
+        <motion.img
+          src={logo2Url}
+          alt='Logo'
+          style={{ ...styles.logo, maxHeight: '50px' }}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+          variants={fadeInVariants}
+        />
+        <motion.img
+          src={logo6Url}
+          alt='Logo'
+          style={{ ...styles.logo, maxHeight: '65px' }}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+          variants={fadeInVariants}
+        />
+        <motion.img
+          src={logo7Url}
+          alt='Logo'
+          style={{ ...styles.logo, maxHeight: '60px' }}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+          variants={fadeInVariants}
+        />
         </Box>
     </Box>
   )
