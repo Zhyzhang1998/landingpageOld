@@ -27,11 +27,6 @@ const styles = {
     },
   },
   gridSetting: {
-    display: "grid",
-    gap: "15px",
-    gridTemplateColumns: "repeat(12, 1fr)",
-    px: "120px",
-  },
   logo: {
     width: "100%",
     maxHeight: "35px",
@@ -48,5 +43,15 @@ const styles = {
     px: "120px",
   },
 };
+    display: 'grid',
+    gap: '15px',
+    gridTemplateColumns: 'repeat(12, 1fr)',
+  },
+  containerStyle: {
+    px: '120px',
+    paddingTop:'128px',
+    paddingBottom: '64px'
+  }
+}
 
 export default styles;

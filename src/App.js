@@ -10,6 +10,7 @@ import Herosection from './components/Herosection';
 import Partners from './components/Partners';
 import Benefits from './components/Benefits';
 import Features from './components/Features';
+import Testimonial from './components/Testimonial'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Partners />
       <Benefits />
       <Features />
+      <Testimonial />
       <Ourprice />
       <WhyUs />
       <ContactForm />

@@ -7,7 +7,7 @@ import { H1Typography, H3Typography, Body1Typography } from './Fonts';
 import { Container, styled } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import GraphicEqIcon from '@mui/icons-material/GraphicEq';
-
+import { motion } from "framer-motion";
 
 function Herosection() {
   const DemoTypography = styled(Typography) ({
@@ -17,11 +17,23 @@ function Herosection() {
     color: 'white',
   });
 
+  const DemoBox = styled(Box) ({
+    marginBottom:'30px',
+    width: '470px',
+    backgroundColor: '#21262B',
+    display: 'flex',
+    alignItems: 'center',
+    padding:'8px',
+    borderRadius: '8px'
+  });
+
+  const MotionDemoBox = motion(DemoBox);
+
  return (
-  <Container id='HeroSection' sx={{paddingLeft: '120px', paddingRight: '120px', paddingTop:'128px', paddingBottom: '64px'}}>
-    <Box sx={{display: 'grid', gridTemplateColumns: '1fr 1fr', gridGap:'15px', height: '600px'}}>
+  <Container id='HeroSection' sx={{...styles.containerStyle, height: '800px'}}>
+    <Box sx={{display: 'grid', gridTemplateColumns: '1fr 1fr', gridGap:'15px'}}>
       <Box sx={{gridColumn: 1, paddingTop: '40px'}} >
-        <H1Typography sx={{paddingBottom: '20px'}}>
+        <H1Typography sx={{paddingBottom: '20px', lineHeight: '110%'}}>
           Your voice is your power.
         </H1Typography>
         <H3Typography sx={{paddingBottom: '20px', paddingRight: '50px'}}>
@@ -57,24 +69,29 @@ function Herosection() {
           />
         </Box>
         <Box className='box3' sx={{position:'absolute', top:'360px', zIndex: 3}}>
-          <Box sx={{marginLeft:'180px', marginBottom:'30px', width: '470px', backgroundColor: '#21262B', display: 'flex', alignItems: 'center', padding:'8px', borderRadius: '8px'}}>
+          <MotionDemoBox sx={{marginLeft:'180px'}} whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
             <GraphicEqIcon sx={{mx: '5px',color: '#B0C0E9'}}/>
             <DemoTypography>
               Hey, this is James. I am calling from... 
             </DemoTypography>
-          </Box>
-          <Box sx={{marginLeft:'120px', marginBottom:'30px', width: '470px', backgroundColor: '#21262B', display: 'flex', alignItems: 'center', padding:'8px', borderRadius: '8px'}}>
+          </MotionDemoBox>
+          <MotionDemoBox sx={{marginLeft:'120px'}} whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
           <GraphicEqIcon sx={{mx: '5px',color: '#FFDB62'}}/>
             <DemoTypography>
-              Hello Chris! This is Sergeant John... 
+              Hey, this is James. I am calling from...
             </DemoTypography>
-          </Box>
-          <Box sx={{marginLeft:'60px', marginBottom:'30px', width: '470px', backgroundColor: '#21262B', display: 'flex', alignItems: 'center', padding:'8px', borderRadius: '8px'}}>
+          </MotionDemoBox>
+          <MotionDemoBox sx={{marginLeft:'60px'}} whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
             <GraphicEqIcon sx={{mx: '5px',color: '#F3D0BB'}}/>
               <DemoTypography>
                 Yo, Mike. It's Poster Child, this Saturday...
               </DemoTypography>
-          </Box>
+          </MotionDemoBox>
+        </Box>
+        <Box className='box4' sx={{position:'absolute', top: 0, zIndex: -1, right: 0}}>
+          <svg width="442" height="868" viewBox="0 0 442 868" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="442" height="868" fill="#F8F6F7"/>
+          </svg>
         </Box>
       </Box>
     </Box>

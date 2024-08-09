@@ -13,22 +13,48 @@ import AdbIcon from '@mui/icons-material/Adb';
 import logoUrl from '../assets/GAlogo.png'
 import styles from './Styles';
 
-const pages = ['Benefits', 'Features', 'Community', 'Pricing','Contact'];
+const pages = ['Benefits', 'Features', 'Community', 'Pricing', 'Contact'];
 
 function Navbar() {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <AppBar
-    position="sticky"
-    sx={{
-      backgroundColor: 'white',
-      borderBottom: '3px solid #F6F6F6'
-    }}
-    elevation={0}
+      position="sticky"
+      sx={{
+        backgroundColor: 'white',
+        borderBottom: '3px solid #F6F6F6'
+      }}
+      elevation={0}
     >
-      <Container maxWidth="xl">
-        <Toolbar disableGutters sx={styles.gridSetting}>
-            <Box className='logo' sx={{ display:'flex', alignItems: 'center', gridColumn: '1 / 4'}}>
+      <Container sx={{...styles.containerStyle, py: 0}}>
+        <Toolbar disableGutters>
+          <Box sx={{display:{xs: 'flex', md: 'none'}}}>
+            <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr'}}>
+              <img
+                src={logoUrl}
+                alt='Logo'
+                style={{
+                  width: '50px',
+                  gridColumn: '2/4'
+              }}/>
+            </Box>
+          </Box>
+          <Box sx={{ display: { xs: 'none', md: 'flex' }}}>
+          <Box sx={{...styles.gridSetting}}>
+            <Box className='logo' sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', gridColumn: '1 / 4'}}>
               <img
                 src={logoUrl}
                 alt='Logo'
@@ -40,7 +66,7 @@ function Navbar() {
             <Box className='page' sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'center', gridColumn: '4 / 10'}}>
               {pages.map((page) => (
                 <Button
-                  href={`#${page}`}
+                  onClick={() => scrollToSection(page)}
                   key={page}
                   sx={styles.navButton}
                 >
@@ -61,6 +87,8 @@ function Navbar() {
                 Get Started
               </Button>
             </Box>
+          </Box>
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
