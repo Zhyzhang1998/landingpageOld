@@ -4,14 +4,14 @@ import { styled } from '@mui/material';
 
 const H1Typography = styled(Typography) ({
   fontFamily: 'poppins',
-  fontWeight: 500,
+  fontWeight: 600,
   fontSize: 50,
   color: '#333333',
 });
 
 const H3Typography = styled(Typography) ({
   fontFamily: 'poppins',
-  fontWeight: 500,
+  fontWeight: 600,
   fontSize: 22,
   color: '#333333',
 });
@@ -26,7 +26,7 @@ const Body1Typography = styled(Typography) ({
 
 const H2Typography = styled(Typography) ({
   fontFamily: 'poppins',
-  fontWeight: 500,
+  fontWeight: 600,
   fontSize: 36,
   color: '#333333',
 });

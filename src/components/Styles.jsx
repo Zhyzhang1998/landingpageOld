@@ -24,13 +24,17 @@ const styles = {
     display: 'grid',
     gap: '15px',
     gridTemplateColumns: 'repeat(12, 1fr)',
-    px: '120px'
   },
   logo: {
     width: '100%',
     maxHeight: '35px',
-    paddingLeft: '30px',
-    paddingRight: '30px'
+    paddingLeft: '50px',
+    paddingRight: '50px'
+  },
+  containerStyle: {
+    px: '120px',
+    paddingTop:'128px',
+    paddingBottom: '64px'
   }
 }
 
