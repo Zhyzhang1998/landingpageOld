@@ -24,7 +24,7 @@ function Partners() {
       alignItems: 'center',
       justifyContent: 'center'
       }}>
-        <H3Typography sx={{}}>
+        <H3Typography sx={{fontWeight: 400}}>
           Clients We Have Served
         </H3Typography>
         <Box maxWidth="xl" sx={{

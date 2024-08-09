@@ -20,7 +20,7 @@ function Herosection() {
   <Container id='HeroSection' sx={{...styles.containerStyle, height: '800px'}}>
     <Box sx={{display: 'grid', gridTemplateColumns: '1fr 1fr', gridGap:'15px'}}>
       <Box sx={{gridColumn: 1, paddingTop: '40px'}} >
-        <H1Typography sx={{paddingBottom: '20px'}}>
+        <H1Typography sx={{paddingBottom: '20px', lineHeight: '110%'}}>
           Your voice is your power.
         </H1Typography>
         <H3Typography sx={{paddingBottom: '20px', paddingRight: '50px'}}>

@@ -13,9 +13,16 @@ import AdbIcon from '@mui/icons-material/Adb';
 import logoUrl from '../assets/GAlogo.png'
 import styles from './Styles';
 
-const pages = ['Benefits', 'Features', 'Community', 'Pricing','Contact'];
+const pages = ['Benefits', 'Features', 'Community', 'Pricing', 'Contact'];
 
 function Navbar() {
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <AppBar
@@ -40,7 +47,7 @@ function Navbar() {
             <Box className='page' sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'center', gridColumn: '4 / 10'}}>
               {pages.map((page) => (
                 <Button
-                  href={`#${page}`}
+                  onClick={() => scrollToSection(page)}
                   key={page}
                   sx={styles.navButton}
                 >
