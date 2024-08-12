@@ -47,10 +47,10 @@ function Footer() {
             sx={{
               display: "flex",
               flexDirection: "column",
-              gridColumn: "4 / 8",
+              gridColumn: "4 / 12",
             }}
           >
-            <H3Typography>Address</H3Typography>
+            <H3Typography>We'd love to hear from you! Contact us for sales, support, partnerships, API integration, or any other questions.</H3Typography>
           </Box>
           <Box
             minWidth={"165px"}
@@ -63,38 +63,13 @@ function Footer() {
           >
             <box>
               <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FacebookIcon
-                  sx={{ fontSize: "30px", color: "white", marginRight: "5px" }}
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/gabriel-ai1/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <LinkedInIcon
-                  sx={{ fontSize: "30px", color: "white", marginRight: "5px" }}
+                  sx={{ fontSize: "30px", color: "white", marginRight: "5px", marginLeft:'8px' }}
                 />
-              </a>
-              <a
-                href="https://www.twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <TwitterIcon
-                  sx={{ fontSize: "30px", color: "white", marginRight: "5px" }}
-                />
-              </a>
-              <a
-                href="https://www.youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <YouTubeIcon sx={{ fontSize: "30px", color: "white" }} />
               </a>
             </box>
           </Box>
@@ -107,9 +82,11 @@ function Footer() {
             }}
           >
             <Body1Typography>
-              ABC street <br />
-              New York, NY 00000 <br />
-              United state
+            <a
+            href="mailto:admin@gabrielai.co"
+                target="_blank"
+                rel="noopener noreferrer"
+            >admin@gabrielai.co</a>
             </Body1Typography>
           </Box>
         </Box>

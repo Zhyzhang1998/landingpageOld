@@ -30,11 +30,11 @@ function valuetext(value) {
 
 function Ourprice() {
   const [sliderValue, setSliderValue] = React.useState(1000);
-  const [textFieldValue, setTextFieldValue] = React.useState(sliderValue * 0.4);
+  const [textFieldValue, setTextFieldValue] = React.useState(sliderValue * 0.25);
 
   const handleSliderChange = (event, newValue) => {
     setSliderValue(newValue);
-    setTextFieldValue((newValue * 0.4).toFixed(2));
+    setTextFieldValue((newValue * 0.25).toFixed(2));
   };
 
   return (

@@ -135,7 +135,7 @@ const rows = [
 function WhyUs() {
   return (
     <Container
-      id="Contact"
+      id="WhyUs"
       sx={{
         paddingLeft: "120px",
         paddingRight: "120px",

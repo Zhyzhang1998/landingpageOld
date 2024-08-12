@@ -10,7 +10,7 @@ import { Container } from "@mui/material";
 function ContactForm() {
   return (
     <Container
-      id="WhyUs"
+      id="Contact"
       sx={{
         paddingLeft: "120px",
         paddingRight: "120px",
@@ -29,7 +29,7 @@ function ContactForm() {
           sx={{
             ...styles.formSetting,
             px: 0,
-            gridTemplateRows: "80px 80px 80px 80px 80px 80px 30px",
+            gridTemplateRows: "1200px",
             position: "relative",
             bgcolor: "#C1C5DC",
           }}
@@ -39,83 +39,14 @@ function ContactForm() {
             sx={{
               display: "flex",
               flexDirection: "column",
-              gridColumn: "4 / 10",
+              gridColumn: "2 / 9",
               position: "relative",
               gridRow: "1",
             }}
           >
-            <TextField id="filled-basic" label="First Name" variant="filled" />
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScI1trloKv5BZDVn8mEeW6epQfqQ4Pg67RG96rsol69e0BjFQ/viewform?embedded=true" width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
           </Box>
-          <Box
-            marginTop={"40px"}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gridColumn: "4 / 10",
-              position: "relative",
-              gridRow: "2",
-            }}
-          >
-            <TextField id="filled-basic" label="Last Name" variant="filled" />
-          </Box>
-          <Box
-            marginTop={"40px"}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gridColumn: "4 / 10",
-              position: "relative",
-              gridRow: "3",
-            }}
-          >
-            <TextField id="filled-basic" label="Email" variant="filled" />
-          </Box>
-          <Box
-            marginTop={"40px"}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gridColumn: "4 / 10",
-              position: "relative",
-              gridRow: "4",
-            }}
-          >
-            <TextField
-              id="filled-basic"
-              label="Phone Number"
-              variant="filled"
-            />
-          </Box>
-          <Box
-            marginTop={"40px"}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gridColumn: "4 / 10",
-              position: "relative",
-              gridRow: "5",
-            }}
-          >
-            <TextField
-              id="filled-basic"
-              label="What else you want to share"
-              variant="filled"
-            />
-          </Box>
-          <Box
-            marginTop={"40px"}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gridColumn: "5 / 9",
-              position: "relative",
-              gridRow: "6",
-            }}
-          >
-            <Button sx={styles.regularButton} variant="getQuote">
-              Contact Us
-            </Button>
-          </Box>
+          
         </Box>
       </Box>
     </Container>
