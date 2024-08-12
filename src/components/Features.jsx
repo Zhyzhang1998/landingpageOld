@@ -82,7 +82,7 @@ function Features() {
         variants={fadeInVariants}
       >
         <H2Typography>
-          What Gabriel AI can do? 
+          What can Gabriel AI do? 
         </H2Typography>
         <Body1Typography sx={{paddingTop: '15px'}}>
           Gabriel AI revolutionizes communication with personalized voicemails and SMS messages tailored to individual preferences. This ensures your messages resonate with each recipient, enhancing engagement and effectiveness.
