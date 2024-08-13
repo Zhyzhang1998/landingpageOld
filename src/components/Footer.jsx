@@ -86,7 +86,8 @@ function Footer() {
             href="mailto:admin@gabrielai.co"
                 target="_blank"
                 rel="noopener noreferrer"
-            >admin@gabrielai.co</a>
+            >admin@gabrielai.co</a> <br/>
+            Phone number: +1 (907) 227-1800
             </Body1Typography>
           </Box>
         </Box>
