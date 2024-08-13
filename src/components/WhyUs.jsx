@@ -17,6 +17,23 @@ import {
   H3Typography,
   H4Typography,
 } from "./Fonts";
+import { motion } from 'framer-motion';
+
+const fadeInVariants = {
+  offscreen: {
+    y: 50,
+    opacity: 0
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 0.8
+    }
+  }
+};
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -143,6 +160,12 @@ function WhyUs() {
         paddingBottom: "64px",
       }}
     >
+    <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+        variants={fadeInVariants}
+      >
       <Box>
         <H2Typography>Why Gabriel AI ?</H2Typography>
         <Box justifyContent={"center"} sx={{ display: "flex" }}>
@@ -203,6 +226,7 @@ function WhyUs() {
           </Table>
         </Box>
       </Box>
+      </motion.div>
     </Container>
   );
 }

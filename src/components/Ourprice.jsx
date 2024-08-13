@@ -12,6 +12,23 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import styles from "./Styles";
+import { motion } from 'framer-motion';
+
+const fadeInVariants = {
+  offscreen: {
+    y: 50,
+    opacity: 0
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.2,
+      duration: 0.8
+    }
+  }
+};
 
 const marks = [
   {
@@ -48,6 +65,12 @@ function Ourprice() {
         position: "relative",
       }}
     >
+    <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+        variants={fadeInVariants}
+      >
       <Box>
         <H2Typography>Our Pricing</H2Typography>
         <Box
@@ -146,6 +169,7 @@ function Ourprice() {
           </Box>
         </Box>
       </Box>
+      </motion.div>
     </Container>
   );
 }
