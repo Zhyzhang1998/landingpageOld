@@ -1,6 +1,5 @@
 import * as React from "react";
 import styles from "./Styles";
-import styled from "@emotion/styled/macro";
 import {
   H2Typography,
   Body1Typography,
@@ -11,10 +10,7 @@ import { Box, Icon } from "@mui/material";
 import Divider from "@mui/joy/Divider";
 import logoUrl from "../assets/GAlogo.png";
 import { Container } from "@mui/material";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 
 function Footer() {
   return (
@@ -50,7 +46,10 @@ function Footer() {
               gridColumn: "4 / 12",
             }}
           >
-            <H3Typography>We'd love to hear from you! Contact us for sales, support, partnerships, API integration, or any other questions.</H3Typography>
+            <H3Typography>
+              We'd love to hear from you! Contact us for sales, support,
+              partnerships, API integration, or any other questions.
+            </H3Typography>
           </Box>
           <Box
             minWidth={"165px"}
@@ -68,7 +67,12 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 <LinkedInIcon
-                  sx={{ fontSize: "30px", color: "white", marginRight: "5px", marginLeft:'8px' }}
+                  sx={{
+                    fontSize: "40px",
+                    color: "white",
+                    marginRight: "5px",
+                    marginLeft: "8px",
+                  }}
                 />
               </a>
             </box>
@@ -82,12 +86,16 @@ function Footer() {
             }}
           >
             <Body1Typography>
-            <a
-            href="mailto:admin@gabrielai.co"
+              Email:{" "}
+              <a
+                href="mailto:admin@gabrielai.co"
                 target="_blank"
                 rel="noopener noreferrer"
-            >admin@gabrielai.co</a> <br/>
-            Phone number: +1 (907) 227-1800
+              >
+                admin@gabrielai.co
+              </a>{" "}
+              <br />
+              Phone Number: +1 (907) 227-1800
             </Body1Typography>
           </Box>
         </Box>

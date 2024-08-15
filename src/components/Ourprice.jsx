@@ -10,7 +10,6 @@ import {
 } from "./Fonts";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import Divider from "@mui/material/Divider";
 import styles from "./Styles";
 import { motion } from 'framer-motion';
 
